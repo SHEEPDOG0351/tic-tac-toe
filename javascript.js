@@ -4,6 +4,7 @@ let player_turn = document.getElementById('player_tracker');
 let players_turn_tracker = 0;  // 0 for Player X, 1 for Player O
 let player1_score_tracker = document.getElementById('player1_score_tracker')
 let player2_score_tracker = document.getElementById('player2_score_tracker')
+let tie_counter = document.getElementById('tie-num')
 
 const winning_combinations = [
     [0, 1, 2], // First row
@@ -63,6 +64,7 @@ function check_winner() {
 
     // Check for a draw (if no empty spaces are left)
     if (!grid_values.includes('')) {
+        tie_counter.innerText++
         alert("It's a draw!");
         reset_board();  // Reset the board after a draw
     }
