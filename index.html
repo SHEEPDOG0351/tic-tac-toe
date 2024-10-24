@@ -80,6 +80,22 @@
         border: 2px solid white;
     }
 
+    .tie-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .tie-counter-container {
+        font-size: 40px;
+    }
+
+    #tie-num {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 50px;
+    }
+
 </style>
 
 <body>
@@ -90,26 +106,33 @@
     <div class="player-info-container">
         <div class="player1-container">
             <p>Player 1</p>
-            <p class="number">0</p>
+            <p id="player1_score_tracker" class="number">0</p>
         </div>
         <div class="player2-container">
             <p>Player 2</p>
-            <p class="number">0</p>
+            <p id='player2_score_tracker' class="number">0</p>
+        </div>
+    </div>
+
+    <div class="tie-container">
+        <div class="tie-counter-container">
+            <p>Tie Counter</p>
+            <p id="tie-num">0</p>
         </div>
     </div>
 
     <p id="player_tracker">Player: X</p>
 
     <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
+        <div class="grid-item"> </div>
     </div>
 
     <script src="javascript.js"></script>
