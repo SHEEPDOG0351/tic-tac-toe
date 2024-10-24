@@ -51,6 +51,11 @@ function check_winner() {
         const [a, b, c] = combination;  // Destructure the indices
         if (grid_values[a] && grid_values[a] === grid_values[b] && grid_values[a] === grid_values[c]) {
             alert(`Player ${grid_values[a]} wins!`);
+            if (grid_values[a] == 'X') {
+                player1_score_tracker.innerText++
+            } else if (grid_values[a] == 'O') {
+                player2_score_tracker.innerText++
+            }
             reset_board();  // Reset the board after the game is won
             return;
         }
