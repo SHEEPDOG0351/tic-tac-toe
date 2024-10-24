@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    .title-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .title-container h1 {
+        text-align: center;
+        font-size: 45px;
+
+    }
+
+    .player-info-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .player1-container {
+        background-color: white;
+        color: black;
+        padding: 0px 30px 20px 30px;
+        margin-right: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .player2-container {
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        padding: 0px 30px 20px 30px;
+        text-align: center;
+    }
+
+    .number {
+        font-size: 50px;
+        padding-top: 10px;
+    }
+
+    #player_tracker {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+</style>
+
+<body>
+    <div class="title-container">
+        <h1>Tic Tac Toe</h1>
+    </div>
+
+    <div class="player-info-container">
+        <div class="player1-container">
+            <p>Player 1</p>
+            <p class="number">0</p>
+        </div>
+        <div class="player2-container">
+            <p>Player 2</p>
+            <p class="number">0</p>
+        </div>
+    </div>
+
+    <p id="player_tracker">Player: X</p>
+
+    
+    
+</body>
+</html>
