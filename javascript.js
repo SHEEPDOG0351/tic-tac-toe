@@ -1,13 +1,13 @@
-const board = document.getElementById("board");
-const cells = document.querySelectorAll(".cell");
-const playerXWins = document.getElementById("playerXWins");
-const playerOWins = document.getElementById("playerOWins");
-const playerTracker = document.getElementById("player_tracker");
-const resetButton = document.getElementById("resetButton");
+const cells = document.querySelectorAll('.grid-item');
+const playerTracker = document.getElementById('player_tracker');
+const player1Score = document.querySelector('.player1-container .number');
+const player2Score = document.querySelector('.player2-container .number');
 
-let currentPlayer = "X";
-let gameBoard = Array(9).fill(null);
-let winsX = 0, winsO = 0;
+let currentPlayer = 'X'; 
+let gameBoard = Array(9).fill(null); 
+let player1Wins = 0;
+let player2Wins = 0;
+let ties = 0;
 
 const winningCombinations = [
   [0, 1, 2],
