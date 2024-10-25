@@ -38,7 +38,6 @@
     }
 
     .player1-container {
-        background-color: white;
         color: black;
         padding: 0px 30px 20px 30px;
         margin-right: 10px;
@@ -47,7 +46,6 @@
     }
 
     .player2-container {
-        background-color: white;
         color: black;
         font-size: 30px;
         padding: 0px 30px 20px 30px;
@@ -77,39 +75,43 @@
         padding: 30px 10px 30px 10px;
         text-align: center;
         font-size: 30px;
-        border: 2px solid white;
+        border: 2px solid orange;
+    }
+
+    .text {
+        color: orange;
     }
 
 </style>
 
 <body>
     <div class="title-container">
-        <h1>Tic Tac Toe</h1>
+        <h1 class="text">Tic Tac Toe</h1>
     </div>
 
     <div class="player-info-container">
         <div class="player1-container">
-            <p>Player 1</p>
-            <p id="player1_score_tracker" class="number">0</p>
+            <p class="text">Player 1</p>
+            <p id="player1_score_tracker" class="number text">0</p>
         </div>
         <div class="player2-container">
-            <p>Player 2</p>
-            <p id='player2_score_tracker' class="number">0</p>
+            <p class="text">Player 2</p>
+            <p id='player2_score_tracker' class="number text">0</p>
         </div>
     </div>
 
-    <p id="player_tracker">Player: X</p>
+    <p id="player_tracker" class="text">Player: X</p>
 
     <div class="grid-container">
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
-        <div class="grid-item"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
+        <div class="grid-item text"> </div>
     </div>
 
     <script src="javascript.js"></script>
